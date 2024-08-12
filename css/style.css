@@ -30,3 +30,26 @@ h2{
     width:25%;
     border: 1px solid #000;
 }
+a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+@media  (max-width:600px) {
+    .parent_div{
+        flex-direction: column;
+    }
+    body{
+        background-color: rgb(79, 79, 227);
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .f1{
+        font-size: 40px;
+    }
+    
+}
