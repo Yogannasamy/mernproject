@@ -1,0 +1,32 @@
+.div1 h1{
+    background-color: blueviolet;
+}
+.div2 h1{
+    background-color: orangered;
+}
+h2{
+    color : red;
+}
+.s1 h2{
+    color: blue;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu li{
+    margin: 10px;
+}
+.active{
+    background-color: aqua;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.m1{
+    height: 25vh;
+    width:25%;
+    border: 1px solid #000;
+}
