@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text",id="input_id">
+    <h1 id = "h1_id">sample test</h1>
+    <h2 id="h1_id">test case</h2>
+    <button  id="btn_id" onclick="changeText()">
+        click
+    </button>
+</body>
+<script>
+    //document.getElementById("btn_id").addEventListener("click",changeText);
+    function changeText(){
+        document.getElementById("h1_id").innerHTML="this is form java script";
+        let val = document.getElementById("input_id").value
+        document.getElementById("h1_id").innerHTML=val;
+    }
+</script>
+</html>

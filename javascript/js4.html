@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+    <script>
+        //let name = ["aaa","bbb","ccc"];
+        //console.log(name[20]);
+        //for(let index in name){
+        //    console.log(index);
+        //}   
+    </script>
+</head>
+<body>
+    <h1 id="h1_id">this is h1</h1>
+    <button id="red_id">Red</button>
+    <button id="blue_id">blue</button>
+    
+</body>
+<script>
+    document.querySelector("#red_id").addEventListener("click",chgRed);
+    document.querySelector("#blue_id").addEventListener("click",chgBlue);
+
+    var classh1 =  document.querySelector("#h1_id").classList;
+    chgRed=()=>{
+        classh1 .add('red');
+        classh1 .remove('blue');
+    }
+
+    chgBlue=()=>{
+        classh1 .add('blue');
+        classh1 .remove('red');
+    }
+</script>
+</html>
