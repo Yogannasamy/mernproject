@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function getUserList() {
+            let res = await fetch("https://regres.in/api/users",{"method":"GET"});
+            
+        }
+        let json = await res.json();
+        let person = [{
+            "name":"akshay",
+            "mobile":542863452,
+            "address":"sample",
+            "name":"new name",
+            "email":"some@gmail.com"
+        },
+        {
+            "name":"ram",
+            "mobile":7845986547,
+            "address":"sample"
+
+        }
+    ];
+    for(let index in jsom['data']){
+        console.log(json['data'][index]['firstname']);
+    }
+    getUserList();
+
+    
+    </script>
+</body>
+</html>
