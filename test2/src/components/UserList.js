@@ -1,4 +1,5 @@
 
+// src/UserList.js
 import React, { useState, useEffect } from 'react';
 
 const UserList = () => {
@@ -6,15 +7,14 @@ const UserList = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-      fetch('https://reqres.in/api/users?page=1')
+        fetch('https://reqres.in/api/users?page=${page}')
             .then(response => response.json())
             .then(data => {
-                console.log(data); 
+                console.log(data); // Print all data to the console
                 setUsers(data.data);
             })
             .catch(error => console.error('Error fetching data:', error));
     }, [page]);
-
 
     return (
         <div>

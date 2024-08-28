@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Register from './Register';
 import { useState} from 'react';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
       />
       <br />
       <button onClick={()=>fetchLogin()}>Click</button>
+      <Register/>
 
     </div>
   );
